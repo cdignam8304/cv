@@ -1,0 +1,12 @@
+{
+  "elements": {
+    "nodes": [
+      { "data": { "id": "Person", "label": "Person" } },
+      { "data": { "id": "Skill", "label": "Skill" } }
+    ],
+    "edges": [
+      { "data": { "source": "Person", "target": "Skill", "label": "hasSkill" } }
+    ]
+  }
+}
+
