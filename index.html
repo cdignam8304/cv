@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My GitHub Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #cy { width: 800px; height: 600px; border: 1px solid black; margin-top: 20px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.0/cytoscape.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to My GitHub Page</h1>
+    <div id="cy"></div>
+    <script>
+        var cy = cytoscape({
+            container: document.getElementById('cy'),
+            elements: [
+                { data: { id: 'a' } },
+                { data: { id: 'b' } },
+                { data: { source: 'a', target: 'b' } }
+            ],
+            style: [
+                { selector: 'node', style: { 'background-color': '#0074D9', 'label': 'data(id)' } },
+                { selector: 'edge', style: { 'line-color': '#B10DC9', 'target-arrow-shape': 'triangle' } }
+            ],
+            layout: { name: 'grid' }
+        });
+    </script>
+</body>
+</html>
