@@ -23,3 +23,9 @@ h1, h2, h3 {
 .contact p {
     margin: 5px 0;
 }
+
+.ul-title {
+    font-weight: bold; /* Highlight the title */
+    color: #0074D9; /* Distinct blue color */
+    font-size: 1.1em; /* Slightly larger text */
+}
