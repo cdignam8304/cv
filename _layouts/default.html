@@ -12,15 +12,27 @@
 
 <body>
 
+    <!-- Include Header -->
     {% include header.html %}
     
-    <main class="container mt-4">
-        {{ content }}
-    </main>
-
+    <!-- Tab Content -->
+    <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"></div>
+        <div class="tab-pane fade" id="v-pills-experience" role="tabpanel" aria-labelledby="v-pills-experience-tab"></div>
+        <div class="tab-pane fade" id="v-pills-ed-cert" role="tabpanel" aria-labelledby="v-pills-ed-cert-tab"></div>
+        <div class="tab-pane fade" id="v-pills-patents" role="tabpanel" aria-labelledby="v-pills-patents-tab"></div>
+        <div class="tab-pane fade" id="v-pills-tech" role="tabpanel" aria-labelledby="v-pills-tech-tab"></div>
+        <div class="tab-pane fade" id="v-pills-languages" role="tabpanel" aria-labelledby="v-pills-languages-tab"></div>
+        <div class="tab-pane fade" id="v-pills-viz" role="tabpanel" aria-labelledby="v-pills-viz-tab"></div>
+    </div>
+    
     <!-- Bootstrap JavaScript Bundle -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Load custom javascript -->
+    <script src="tabs.js"></script>
+    
+    
 </body>
 
 </html>
