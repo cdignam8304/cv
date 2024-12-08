@@ -47,3 +47,10 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #005BB5;
 }
+
+.nav-pills {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
