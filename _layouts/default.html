@@ -12,18 +12,26 @@
 
 <body>
 
-    <!-- Include Header -->
-    {% include header.html %}
-    
-    <!-- Tab Content -->
-    <div class="tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"></div>
-        <div class="tab-pane fade" id="v-pills-experience" role="tabpanel" aria-labelledby="v-pills-experience-tab"></div>
-        <div class="tab-pane fade" id="v-pills-ed-cert" role="tabpanel" aria-labelledby="v-pills-ed-cert-tab"></div>
-        <div class="tab-pane fade" id="v-pills-patents" role="tabpanel" aria-labelledby="v-pills-patents-tab"></div>
-        <div class="tab-pane fade" id="v-pills-tech" role="tabpanel" aria-labelledby="v-pills-tech-tab"></div>
-        <div class="tab-pane fade" id="v-pills-languages" role="tabpanel" aria-labelledby="v-pills-languages-tab"></div>
-        <div class="tab-pane fade" id="v-pills-viz" role="tabpanel" aria-labelledby="v-pills-viz-tab"></div>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Tabs on the left -->
+            <div class="col-md-3">
+                {% include header.html %}
+            </div>
+
+            <!-- Tab content on the right -->
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"></div>
+                    <div class="tab-pane fade" id="v-pills-experience" role="tabpanel" aria-labelledby="v-pills-experience-tab"></div>
+                    <div class="tab-pane fade" id="v-pills-ed-cert" role="tabpanel" aria-labelledby="v-pills-ed-cert-tab"></div>
+                    <div class="tab-pane fade" id="v-pills-patents" role="tabpanel" aria-labelledby="v-pills-patents-tab"></div>
+                    <div class="tab-pane fade" id="v-pills-tech" role="tabpanel" aria-labelledby="v-pills-tech-tab"></div>
+                    <div class="tab-pane fade" id="v-pills-languages" role="tabpanel" aria-labelledby="v-pills-languages-tab"></div>
+                    <div class="tab-pane fade" id="v-pills-viz" role="tabpanel" aria-labelledby="v-pills-viz-tab"></div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- Bootstrap JavaScript Bundle -->
