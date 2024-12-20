@@ -25,8 +25,8 @@
     <span class="badge text-bg-primary">Data Strategy</span>
 </div>
 
-<div>
-    <canvas id="industry_PieChart" width="400" height="400"></canvas>
+<div class="selection">
+    <canvas id="myChart"></canvas>
 </div>
 
 <div class="section">
@@ -68,48 +68,32 @@ technical concepts.</li>
 
 <!-- Script for charts -->
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const ctx = document.getElementById('industry_PieChart').getContext('2d');
-        const myPieChart = new Chart(ctx, {
-          type: 'pie',
-          data: {
-            labels: [
-            'Financial Services',
-            'IT Consultancy',
-            'Media & Telecommunications',
-            'Energy',
-            'Entrepreneur'], // Add your labels here
-            datasets: [{
-              label: 'My Dataset',
-              data: [50, 15, 15, 10, 10], // Add proportions for each slice
-              backgroundColor: [
-                'red',
-                'blue',
-                'green',
-                'orange',
-                'purple',
-              ],
-              borderColor: [
-                'darkred',
-                'darkblue',
-                'darkgreen',
-                'darkorange',
-                'darkpurple',
-              ],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            responsive: true
-          }
-        });
-    });
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
 </script>
 
 
-
 <script src="js/charts.js"></script>
-<!-- Chart.js javascript -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
