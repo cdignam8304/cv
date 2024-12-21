@@ -1,3 +1,7 @@
+<head>
+    <script src="https://cdn.plot.ly/plotly-3.0.0-rc.2.min.js" charset="utf-8"></script>
+</head>
+
 
 <div class="section">
     <h2>Summary</h2>
@@ -27,7 +31,7 @@
 
 <div class="section">
     <h2>Plotly.js Placeholder</h2>
-    <div id="tester" style="width:600px;height:250px;"></div>
+    <div id="gd"></div>
 </div>
 
 
@@ -70,16 +74,11 @@ technical concepts.</li>
 
 <!-- Script for charts -->
 
-<!-- Try plotly.js -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-
 <script>
-    TESTER = document.getElementById('tester');
-    Plotly.newPlot( TESTER, [{
-    x: [1, 2, 3, 4, 5],
-    y: [1, 2, 4, 8, 16] }], {
-    margin: { t: 0 } } );
+    Plotly.newPlot("gd", /* JSON object */ {
+        "data": [{ "y": [1, 2, 3] }],
+        "layout": { "width": 600, "height": 400}
+    })
 </script>
 
 
