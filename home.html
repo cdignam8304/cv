@@ -26,9 +26,15 @@
 </div>
 
 <div class="section">
-    <h2>Chart Placeholder</h2>
+    <h2>Chart.js Placeholder</h2>
     <canvas id="myChart"></canvas>
 </div>
+
+<div class="section">
+    <h2>Plotly.js Placeholder</h2>
+    <div id="tester" style="width:600px;height:250px;"></div>
+</div>
+
 
 <div class="section">
     <h2>Industries</h2>
@@ -72,26 +78,11 @@ technical concepts.</li>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
+    TESTER = document.getElementById('tester');
+    Plotly.newPlot( TESTER, [{
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16] }], {
+    margin: { t: 0 } } );
 </script>
 
 
